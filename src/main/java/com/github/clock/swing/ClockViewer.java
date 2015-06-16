@@ -7,6 +7,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import github.args;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.WindowAdapter;
@@ -118,6 +119,7 @@ public class ClockViewer extends JComponent{
 
         g2.setStroke(new BasicStroke(2));
         g2.setColor(Color.RED);
+        g2.setColor()
         drawHand(g2, clock.getMinute(), length * 0.7);
         // 長針の位置は，分の位置で表そうとすると，時間×5．
         // 24時間制のため，12で割った余りを時間とする．
